@@ -3,15 +3,7 @@ python:
   - "3.8"
 install:
   - pip install -r requirements.txt
-script:
-  #- black --check --exclude SRC /home/travis/build/akula2000/polls/myvenv
-  #- flake8 --exclude=migrations .
-  # - pytest
-  #- coverage run --source=testSite,polls, manage.py test
-  - python manage.py migrate
 
-after_script:
- # - python -m coveralls
 
 
 deploy:

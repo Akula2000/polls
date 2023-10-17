@@ -3,7 +3,6 @@ python:
   - "3.8"
 install:
   - pip install -r requirements.txt
-  - echo $TEST_ENV
 script:
   #- black --check --exclude SRC /home/travis/build/akula2000/polls/myvenv
   #- flake8 --exclude=migrations .

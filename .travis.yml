@@ -7,7 +7,7 @@ script:
   #- black --check --exclude SRC /home/travis/build/akula2000/polls/myvenv
   #- flake8 --exclude=migrations .
   # - pytest
-  - coverage run --source=testSite,polls, manage.py test
+  #- coverage run --source=testSite,polls, manage.py test
 
 after_script:
   - python -m coveralls

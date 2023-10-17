@@ -12,7 +12,7 @@ script:
 after_script:
  # - python -m coveralls
 
-before_deploy: "echo 'ready?'"
+before_deploy: "echo 'ready?' $TEST_ENV"
 
 deploy:
   provider: elasticbeanstalk

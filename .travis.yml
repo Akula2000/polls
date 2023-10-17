@@ -6,7 +6,7 @@ install:
 script:
   #- black --check --exclude SRC /home/travis/build/akula2000/polls/myvenv
   #- flake8 --exclude=migrations .
-  # - pytest
+  - pytest
   #- coverage run --source=testSite,polls, manage.py test
 
 after_script:
@@ -22,4 +22,4 @@ deploy:
   env: "dj-env-3"
   bucket_name: "elasticbeanstalk-us-east-1-855318216650"
   on:
-    branch: main
+    branch: main 

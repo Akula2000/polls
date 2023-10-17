@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.11"
+  - "3.11-dev"
 install:
   - pip install -r requirements.txt
 script:
@@ -12,6 +12,8 @@ script:
 after_script:
  # - python -m coveralls
 
+before_deploy: "echo 'ready?'"
+
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY
@@ -22,3 +24,5 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-855318216650"
   on:
     branch: main
+
+after_deploy: "echo 'deployment done'"

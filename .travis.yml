@@ -10,7 +10,7 @@ script:
   - black --check . --exclude=eb-virt
   - flake8 --exclude=migrations .
   - pytest
-  - coverage run --source=blogs manage.py test
+  - coverage run --source=testSite,polls, manage.py test
 
 after_script:
   - python -m coveralls

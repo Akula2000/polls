@@ -1,6 +1,6 @@
-from django.test import TestCase
+# from django.test import TestCase
 
 
-class RandomTest(TestCase):
-    def test_basic(self):
-        self.assertNotEqual(9, 0)
+# class RandomTest(TestCase):
+#     def test_basic(self):
+#         self.assertNotEqual(9, 0)
